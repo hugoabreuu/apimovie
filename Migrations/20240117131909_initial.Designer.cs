@@ -12,15 +12,15 @@ using WebApi.Data;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230918131739_init")]
-    partial class init
+    [Migration("20240117131909_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.10")
+                .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Proxies:ChangeTracking", false)
                 .HasAnnotation("Proxies:CheckEquality", false)
                 .HasAnnotation("Proxies:LazyLoading", true)
@@ -157,8 +157,7 @@ namespace WebApi.Migrations
 
             modelBuilder.Entity("WebApi.Models.Endereco", b =>
                 {
-                    b.Navigation("Cinema")
-                        .IsRequired();
+                    b.Navigation("Cinema");
                 });
 
             modelBuilder.Entity("WebApi.Models.Filme", b =>

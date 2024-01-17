@@ -17,6 +17,6 @@ public class Filme
     public int Ano_Lancamento { get; set; }
 
     #region relacionamentos
-    public virtual ICollection<Sessao> Sessoes { get; set; }
+    public virtual ICollection<Sessao>? Sessoes { get; set; }
     #endregion
 }

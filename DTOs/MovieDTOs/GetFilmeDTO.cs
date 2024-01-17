@@ -10,6 +10,6 @@ public class GetFilmeDTO
     public string? Genero { get; set; }
     public int Duracao { get; set; }
     public int Ano_Lancamento { get; set; }
-    public ICollection<ReadSessaoDTO> Sessoes { get; set; }
+    public ICollection<ReadSessaoDTO>? Sessoes { get; set; }
     public DateTime Data_Consulta { get; set; } = DateTime.Now;
 }

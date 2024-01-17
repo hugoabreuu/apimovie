@@ -11,6 +11,6 @@ namespace WebApi.Models
         public string Logradouro { get; set; } = string.Empty;
         [Required]
         public int Numero { get; set; }
-        public virtual Cinema Cinema { get; set; }
+        public virtual Cinema? Cinema { get; set; }
     }
 }
